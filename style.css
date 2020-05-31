@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Playfair Display', serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Playfair Display', serif;
+    background-image: radial-gradient( #55efc4 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.clockbox{    
+    background-image: linear-gradient(315deg, #c2e59c 10%, #64b3f4 90%);
+    padding: 4em 3em;
+    border-radius: 20% 60% 30% 70% / 40% 40% 60% 60%;
+    animation: animate 2s infinite 0.4s;
+}
+.time{
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(240, 216, 5), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.date{
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(243, 52, 4), rgb(247, 141, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes animate{
+    0%{
+        border-radius: 20% 60% 30% 70% / 40% 40% 60% 60%;
+    }
+    25%{
+        border-radius: 40% 25% 89% 23% / 50% 28% 34% 12%;
+    }
+    50%{
+        border-radius: 23% 34% 60% 70% / 40% 87% 20% 90%;
+    }
+    75%{
+        border-radius: 20% 60% 30% 70% / 80% 80% 50% 50%;
+    }
+    100%{
+        border-radius: 40% 30% 30% 40% / 74% 64% 64% 74%;
+    }
+
+}
